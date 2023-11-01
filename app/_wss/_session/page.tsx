@@ -13,7 +13,7 @@ import { LoginSession } from "@/state/user/Login";
 // config
 import { CONFIG } from "@/lib/config";
 
-const websocketUrl = process.env.WSS;
+const websocketUrl = process.env.NEXT_PUBLIC_WSS;
 
 const ConnectWSS = () => {
   console.log("LoginSessionWSS");
@@ -29,7 +29,7 @@ const ConnectWSS = () => {
   useEffect(() => {
     if (loginUser.session.length > 0) {
       let roomName: string = loginUser.session[0].userId;
-
+      console.log(`${websocketUrl}/${roomName}/${loginUser.session[0].userId}`);
       socketRef.current = new WebSocket(
         `${websocketUrl}/${roomName}/${loginUser.session[0].userId}`,
       );

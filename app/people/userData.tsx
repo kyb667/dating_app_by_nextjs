@@ -39,7 +39,7 @@ import UseBreakpoint from "@/app/_grid/UseBreakpoint";
 //
 import Progress from "@/app/_progress/Progress";
 
-const websocketUrl = process.env.WSS;
+const websocketUrl = process.env.NEXT_PUBLIC_WSS;
 
 const FriendDataComponentsHeader = ({
   data,

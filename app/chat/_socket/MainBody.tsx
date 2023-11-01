@@ -14,7 +14,7 @@ import ChatList from "./ChatList";
 // config
 import { CONFIG } from "@/lib/config";
 
-const websocketUrl = process.env.WSS;
+const websocketUrl = process.env.NEXT_PUBLIC_WSS;
 
 interface Chat {
   target: string;
