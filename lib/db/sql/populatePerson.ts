@@ -32,7 +32,7 @@ export const findPopulatePerson = async () => {
         let data = [];
 
         for (const iter of result.records) {
-          let d = { ...{} };
+          let d: any = { ...{} };
           for (const key of iter.keys) {
             d[key] = iter.get(key);
           }

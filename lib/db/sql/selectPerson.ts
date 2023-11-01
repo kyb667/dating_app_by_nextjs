@@ -493,7 +493,7 @@ export const selectUserInfoByCommunity = async (userId: string) => {
         //   result.records.map((data) => data.get("data").properties.name),
         // );
         return {
-          data: result.records.map((data) => data.get("data").properties.name),
+          data: result.records.map((data : any) => data.get("data").properties.name),
           code: CONFIG.STATUS_CODE.SUCCESS,
         };
       })
@@ -509,7 +509,7 @@ export const selectUserInfoByCommunity = async (userId: string) => {
   }
 };
 
-export const selectUserInfoByAge = async (userId: strings) => {
+export const selectUserInfoByAge = async (userId: string) => {
   console.debug("selectUserInfoByAge start");
   try {
     const sql = `
