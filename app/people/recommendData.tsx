@@ -38,7 +38,7 @@ import { CONFIG } from "@/lib/config";
 import UseBreakpoint from "@/app/_grid/UseBreakpoint";
 import Progress from "@/app/_progress/Progress";
 
-const websocketUrl = CONFIG.WSS;
+const websocketUrl = process.env.WSS;
 
 const FriendDataComponentsHeader = ({
   data,

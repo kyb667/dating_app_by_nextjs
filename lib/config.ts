@@ -1,6 +1,4 @@
 export const CONFIG = {
-  // WSS: "wss://socketsbay.com/wss/v2/1/demo/",
-  WSS: "wss://tv6cml.sse.codesandbox.io",
   HEADER: [
     // { header: "談話室", children: [{ url: "/test", label: "なんでもOK!" }] },
     {
@@ -82,7 +80,7 @@ export const CONFIG = {
     ZERO: 0,
     ONE: 1,
   },
-  IMG : [
+  IMG: [
     {
       img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
     },
@@ -155,5 +153,5 @@ export const CONFIG = {
     {
       img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
     },
-  ]
+  ],
 };

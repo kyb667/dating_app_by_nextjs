@@ -13,7 +13,7 @@ import { LoginSession } from "@/state/user/Login";
 // config
 import { CONFIG } from "@/lib/config";
 
-const websocketUrl = CONFIG.WSS;
+const websocketUrl = process.env.WSS;
 
 const ConnectWSS = () => {
   console.log("LoginSessionWSS");
