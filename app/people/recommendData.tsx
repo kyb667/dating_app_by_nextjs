@@ -220,8 +220,8 @@ const LoginCheck = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loginUser]);
 
-  return (loginUser.session.length !== CONFIG.COMMON.ZERO) &
-    (populareFriendList.length === 0) ? (
+  return loginUser.session.length !== CONFIG.COMMON.ZERO &&
+    populareFriendList.length === 0 ? (
     <Progress>データ読み込み中...</Progress>
   ) : (
     populareFriendList.map((data: any, index: number) => (
